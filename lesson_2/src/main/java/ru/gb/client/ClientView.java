@@ -27,9 +27,7 @@ public class ClientView extends JFrame implements ClientObserver, ReceiverObserv
     JButton btnSend;
     JPanel topPanel;
 
-
     private String name;
-
 
     public ClientView(ControllerInterface controller, ClientModelInterface model) {
         this.controller = controller;
@@ -41,7 +39,6 @@ public class ClientView extends JFrame implements ClientObserver, ReceiverObserv
 //        setLocation(server.getX() - 500, server.getY());
 
         createPanel();
-
         setVisible(true);
     }
 
@@ -148,7 +145,6 @@ public class ClientView extends JFrame implements ClientObserver, ReceiverObserv
 
     @Override
     public void updateStatusServer(boolean isServerWorking) {
-
         clientModel.setServerWorking(isServerWorking);
 
         if (!controller.isServerWorking() && clientModel.getConnected()) {

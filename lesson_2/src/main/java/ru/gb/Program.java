@@ -26,8 +26,6 @@ public class Program
         controller.registerSendingMessages(server);
         controller.registerSendingMessages(client1);
         controller.registerSendingMessages(client2);
-        
-        ;
 
     }
 }
